@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" href="img/favicon (2).png" />
+	<title>Localadle — Homemade meals from local chefs</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ouAUlj-krHLb6XQ6b",
+      });
+   })();
+   </script>
+   <script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<a href="#"><img src="img/localadle logo1.png" alt="LocalAdle Logo" class="logo"></a>
+
+		<div class="menuToggle" onclick="toggleMenu()"></div>
+		<ul class="navigation">
+			<li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+			<li><a href="#about" onclick="toggleMenu()">About</a></li>
+			<li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+			<li><a href="#chefs" onclick="toggleMenu()">Chefs</a></li>
+			<li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+			<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+		</ul>
+	</header>
+
+	<!-- HERO / BANNER -->
+	<section class="banner" id="banner">
+		<div class="content">
+			<h2>Homely meals</h2>
+			<p>
+				Localadle connects you with verified home chefs across London authentic flavours, clear allergen labels and trusted hygiene checks. Order one-time or subscribe to weekly meals.
+			</p>
+			<a href="#menu" class="btn">See Menu</a>
+			<a href="#contact" class="btn ghost">Join Pilot</a>
+		</div>
+	</section>
+
+	<!-- ABOUT -->
+	<section class="about" id="about">
+		<div class="row">
+			<div class="col50">
+				<h2 class="titleText"><span>A</span>bout Localadle</h2>
+				<p>
+					Localadle is a marketplace linking food lovers with skilled home chefs. Our aim: bring fresh, affordable, and hygienic home-cooked meals to local communities. We support chefs with onboarding, hygiene checks and a simple way to reach nearby customers.
+				</p>
+				<br />
+				<p>
+					We focus on trust and food hygiene . During our London pilot we will use chef pickup, customer pickup and trusted courier partners.
+				</p>
+			</div>
+
+			<div class="col50">
+				<div class="imgBx">
+					<img src="img/mutton curry.jpg" alt="Home cooked meal sample">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- MENU (sample showcase) -->
+	<section class="menu" id="menu">
+		<div class="title">
+			<h2 class="titleText">Our <span>M</span>enu</h2>
+			<p>Handmade dishes from local chefs — browse authentic home flavours.</p>
+		</div>
+
+		<div class="content">
+			<div class="box">
+				<div class="imgBx"><img src="img/menu1.jpg" alt="Menu item 1"></div>
+				<div class="text"><h3>Comfort Curry</h3></div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx"><img src="img/menu2.jpg" alt="Menu item 2"></div>
+				<div class="text"><h3>Family Pasta</h3></div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx"><img src="img/menu3.jpg" alt="Menu item 3"></div>
+				<div class="text"><h3>Healthy Bowl</h3></div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx"><img src="img/menu4.jpg" alt="Menu item 4"></div>
+				<div class="text"><h3>Fresh Salad</h3></div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx"><img src="img/menu5.jpg" alt="Menu item 5"></div>
+				<div class="text"><h3>Home Soup</h3></div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx"><img src="img/menu6.jpg" alt="Menu item 6"></div>
+				<div class="text"><h3>Sweet Treats</h3></div>
+			</div>
+		</div>
+
+		<div class="title"><a href="#contact" class="btn">Order / Join Pilot</a></div>
+	</section>
+
+	<!-- CHEFS (converted from expert) -->
+	<section class="expert" id="chefs">
+		<div class="title">
+			<h2 class="titleText">Our <span>H</span>ome Chefs</h2>
+			<p>Local cooks bringing authentic recipes from their kitchens.</p>
+		</div>
+
+		<div class="content">
+			<div class="box">
+				<div class="imgBx"><img src="img/expert1.jpg" alt="Chef 1"></div>
+				<div class="text"><h3>Chef Aisha</h3></div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx"><img src="img/expert2.jpg" alt="Chef 2"></div>
+				<div class="text"><h3>Chef Sam</h3></div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx"><img src="img/expert3.jpg" alt="Chef 3"></div>
+				<div class="text"><h3>Chef Priya</h3></div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx"><img src="img/expert4.jpg" alt="Chef 4"></div>
+				<div class="text"><h3>Chef Daniel</h3></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TESTIMONIALS -->
+	<section class="testimonials" id="testimonials">
+		<div class="title white">
+			<h2 class="titleText">What <span>People</span> Say</h2>
+			<p>Real feedback from early tasters and pilot users.</p>
+		</div>
+
+		<div class="content">
+			<div class="box">
+				<div class="imgBx"><img src="img/testi1.jpg" alt=""></div>
+				<div class="text">
+					<p>“Delicious and reminds me of home — great portion sizes.”</p>
+					<h3>John Doe</h3>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx"><img src="img/testi2.jpg" alt=""></div>
+				<div class="text">
+					<p>“Easy to order and the hygiene info felt reassuring.”</p>
+					<h3>Jack Thomas</h3>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx"><img src="img/testi3.jpg" alt=""></div>
+				<div class="text">
+					<p>“Great value compared to restaurants for homemade meals.”</p>
+					<h3>Soozie M.</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CONTACT -->
+	<section class="contact" id="contact">
+		<div class="title">
+			<h2 class="titleText"><span>C</span>ontact & Join Pilot</h2>
+			<p>Sign up for early access, chef onboarding, or general enquiries.</p>
+		</div>
+
+		<div class="contactForm">
+			<h3>Send Message / Join</h3>
+			<form id="contactForm" onsubmit="handleContact(event)">
+				<div class="inputBox"><input type="text" id="name" placeholder="name" required></div>
+				<div class="inputBox"><input type="email" id="email" placeholder="email" required></div>
+				<div class="inputBox"><input type="number" id="number" placeholder="mobile" required></div>
+				<div class="inputBox"><input type="text" id="postcode" placeholder="postcode" required></div>
+				<div class="inputBox"><textarea id="message" placeholder="Tell us if you are a chef or customer, your area/postcode, and any notes." required></textarea></div>
+				<div class="inputBox"><input type="submit" onclick="sendmail()" value="Send"></div>
+			</form>
+			<div id="contactMsg" style="display:none;margin-top:12px;color:green">Thanks — we will contact you soon.</div>
+		</div>
+	</section>
+
+	<div class="copyrightText">
+		<p>Copyright © <strong>Localadle</strong> — All Rights Reserved.</p>
+	</div>
+
+	<script type="text/javascript">
+		// Sticky header on scroll
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+
+		// Toggle mobile nav
+		function toggleMenu() {
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+
+		// Demo contact handler (replace with backend)
+		function handleContact(e) {
+			e.preventDefault();
+			document.getElementById('contactForm').reset();
+			document.getElementById('contactMsg').style.display = 'block';
+			setTimeout(()=>document.getElementById('contactMsg').style.display='none', 4000);
+		}
+	</script>
+</body>
+</html>
